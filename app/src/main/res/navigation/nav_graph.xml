@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- navigation.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.tryagain.MainActivity"
+        android:label="Главный экран"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_ageGroupFragment"
+            app:destination="@id/ageGroupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.tryagain.DetailActivity"
+        android:label="Детали"
+        tools:layout="@layout/activity_detail" />
+
+    <fragment
+        android:id="@+id/ageGroupFragment"
+        android:name="com.example.tryagain.AgeGroupActivity"
+        android:label="Группа возрастов"
+        tools:layout="@layout/age_group_layout" >
+        <action
+            android:id="@+id/action_ageGroupFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+</navigation>
