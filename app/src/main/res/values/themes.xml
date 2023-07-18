@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Theme.TryAgain" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Дополнительные атрибуты стиля -->
+        <!-- Основной цвет приложения -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- Цвет панели инструментов -->
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <!-- Цвет акцента -->
+        <item name="colorAccent">@color/accent</item>
+        <!-- Другие настройки стиля и темы -->
     </style>
 </resources>

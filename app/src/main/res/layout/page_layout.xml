@@ -1,40 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- res/layout/page_layout.xml -->
-
 <LinearLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium">
+
     <TextView
         android:id="@+id/idTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:paddingBottom="@dimen/margin_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginBottom="@dimen/margin_small" />
 
     <TextView
         android:id="@+id/nameTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginBottom="@dimen/margin_small" />
 
     <TextView
         android:id="@+id/descriptionTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginBottom="@dimen/margin_small" />
+
     <TextView
         android:id="@+id/childTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginBottom="@dimen/margin_small" />
+
     <TextView
         android:id="@+id/imageNameTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:paddingTop="@dimen/margin_small" />
 
 </LinearLayout>
-

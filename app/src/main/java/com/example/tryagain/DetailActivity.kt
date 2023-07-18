@@ -1,15 +1,21 @@
 package com.example.tryagain
 
-import android.widget.ImageView
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 
 class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val id = intent.getStringExtra("id")
         val name = intent.getStringExtra("name")
@@ -36,5 +42,20 @@ class DetailActivity : AppCompatActivity() {
             R.drawable.default_image
         }
         imageView.setImageResource(imageResourceId)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
